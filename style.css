@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+  box-sizing:border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  text-decoration: none;
+}
+
+.orange {
+  color: #ff6b00;
+}
+
+.bg-dark {
+  background-color: #1C1A19;
+}
+
+.bg-lighter-dark {
+  background-color: #3C3A39;
+}
+
+.crete-round {
+  font-family: 'Crete Round', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #18a0fb;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7em 1.3em;
+  align-items: center;
+  color: #888;
+  font-family: 'inter', sans-serif;
+  position: sticky;
+  top: 0;
+}
+
+header {
+  color: white;
+  padding: 4em 2em;
+}
+
+.header-social-media {
+  padding: 0.8em 0;
+}
+
+.header-social-media > a {
+  margin-right: 1em;
+  font-size: 1em;
+}
