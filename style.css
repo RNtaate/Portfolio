@@ -17,6 +17,10 @@
   background-color: #ff6b00;
 }
 
+.text-white {
+  color: white;
+}
+
 .bg-dark {
   background-color: #1C1A19;
 }
@@ -63,7 +67,8 @@ a:hover {
   z-index: 1;
 }
 
-header {
+header,
+.about-section {
   color: white;
   padding: 4em 2em;
   margin-bottom: 2em;
@@ -90,14 +95,15 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px 15px;
   padding: 1.5em 0;
   border-top: 1px solid #999;
 }
 
 .project {
   height: 22em;
+  margin: 10px 0;
   width: 100%;
+  border-radius: 2px;
   max-width: 100%;
   background-image: url('images/screenshot_electronics.jpg');
   background-position: center;
@@ -155,7 +161,9 @@ main {
   margin-right: 20px;
 }
 
-.desc > p, .langs {
+p,
+.langs,
+.resume-btn {
   font-size: 0.9em;
 }
 
@@ -166,7 +174,6 @@ main {
   padding: 10px;
   font-weight: bold;
   width: 80%;
-  margin: 0 auto;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -203,4 +210,73 @@ main {
 
 .project:hover .see-btn {
   top: 50%;
+}
+
+.about-info-div {
+  padding-bottom: 3em;
+  border-bottom: 1px solid white;
+}
+
+.about-info-div > h1 {
+  font-size: 2.5em;
+}
+
+.about-info-div > .resume-btn {
+  position: relative;
+  width: 50%;
+  left: 0;
+  margin-top: 1em;
+  transform: translateX(0)
+}
+
+.about-info-div > p {
+  padding: 1em 0;
+}
+
+.skills-section {
+  padding: 2em 0;
+}
+
+.skill-name-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7em 0.3em;
+  font-weight: bold;
+  position: relative;
+}
+
+.skill-name-div > ul {
+  list-style-type: none;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 100%;
+  right: 0;
+  width: 50%;
+  transform: translateY(-3em);
+  z-index: 0;
+  transition: all 0.5s ease-in-out 0s, visiblility 0s linear 0.5s, z-index 0s linear 0.01s;
+}
+
+.skill-name-div:hover {
+  background-color: #333;
+  cursor: pointer
+}
+
+.skill-name-div > i {
+  transition: all 0.5s ease-in-out;
+}
+
+.skill-name-div:hover > i {
+  transform: rotateX(180deg);
+  transform-origin: 50%;
+}
+
+.skill-name-div:hover > ul {
+  background-color: #333;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0);
+  transition-delay: 0s, 0s, 0s;
 }
