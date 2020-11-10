@@ -57,6 +57,47 @@ a {
 
 a:hover {
   color: #18a0fb;
+  cursor: pointer;
+}
+
+.overlay-menu-div {
+  background-color: rgba(50, 50, 50, 0.95);
+  height: 100%;
+  width: 75%;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  padding: 3em 0;
+  overflow: hidden;
+}
+
+.close-span {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  font-size: 2em;
+  color: gray;
+}
+
+.overlay-inner-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+}
+
+.overlay-inner-menu > a {
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  border-bottom: 1px solid gray;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.close-span:hover {
+  cursor: pointer;
+  color: white;
 }
 
 .navbar {
