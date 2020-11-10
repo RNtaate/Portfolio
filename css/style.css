@@ -29,6 +29,10 @@
   color: #333
 }
 
+.color-lighter-dark {
+  color: #3C3A39;
+}
+
 .bg-lighter-dark {
   background-color: #3C3A39;
 }
@@ -295,9 +299,10 @@ p,
   transition-delay: 0s, 0s, 0s;
 }
 
-footer {
+.contact-section-footer {
   padding: 0 1em;
   padding-top: 2em;
+  border-bottom: 1px solid lightgray;
 }
 
 .message-div {
@@ -333,4 +338,25 @@ input[type=submit] {
   border: none;
   font-weight: bold;
   padding: 0.9em 0;
+}
+
+.lower-section-footer {
+  padding: 0 1em;
+  padding-top: 1em;
+}
+
+.lower-section-footer > p {
+  text-align: center;
+  color: #444;
+  font-size: 0.8em;
+}
+
+.lower-section-footer > .header-social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.lower-section-footer > .header-social-media > a{
+  margin: 0 1em;
+  font-size: 1.2em;
 }
