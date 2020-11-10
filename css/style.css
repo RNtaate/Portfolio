@@ -63,7 +63,7 @@ a:hover {
 .overlay-menu-div {
   background-color: rgba(50, 50, 50, 0.95);
   height: 100%;
-  width: 75%;
+  width: 0;
   z-index: 2;
   position: fixed;
   top: 0;
@@ -71,6 +71,7 @@ a:hover {
   color: white;
   padding: 3em 0;
   overflow: hidden;
+  transition: 0.5s ease-in-out;
 }
 
 .close-span {
@@ -110,6 +111,11 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.navbar > span:hover {
+  cursor: pointer;
+  color: white;
 }
 
 header,
