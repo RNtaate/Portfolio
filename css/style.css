@@ -33,6 +33,10 @@
   color: #3C3A39;
 }
 
+.navbar-color {
+  color: #888;
+}
+
 .bg-lighter-dark {
   background-color: #3C3A39;
 }
@@ -116,6 +120,12 @@ a:hover {
 .navbar > span:hover {
   cursor: pointer;
   color: white;
+}
+
+.page-jump-div {
+  justify-content: space-between;
+  display: none;
+  width: 50%;
 }
 
 header,
@@ -289,7 +299,7 @@ input[type=submit]:active,
   height: 100%;
   width: 100%;
   position: fixed;
-  top: 0;
+  top: -100%;
   left: 0;
   transform: scale(0);
   background-color: rgba(0, 0, 0, 0.7);
@@ -542,4 +552,14 @@ input[type=submit] {
 .lower-section-footer > .header-social-media > a{
   margin: 0 1em;
   font-size: 1.2em;
+}
+
+@media screen and (min-width: 576px) {
+  .navbar > span {
+    display: none;
+  }
+
+  .page-jump-div {
+    display: flex;
+  }
 }
