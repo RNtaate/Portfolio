@@ -598,6 +598,19 @@ input[type=submit] {
     padding-right: 4em;
   }
 
+  .skill-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skill-name-div {
+    width: 30%;
+  }
+
+  .skill-name-div > ul {
+    width: 100%;
+  }
+
   .message-div {
     flex: 1;
     text-align: start;
@@ -609,13 +622,19 @@ input[type=submit] {
 }
 
 @media screen and (min-width: 992px) {
+  
   .projects-section {
-    padding: 1.5em 1em;
+    padding: 1.5em 2em;
   }
 
   .project {
     width: 31%;
     max-width: 31%;
+  }
+
+  header,
+  .about-section {
+    padding: 4em 4em;
   }
 
   .message-div {
