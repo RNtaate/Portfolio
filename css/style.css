@@ -283,10 +283,14 @@ input[type=submit]:active,
   height: 100%;
   width: 100%;
   position: fixed;
-  top: 0;
+  top: -100%;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  transform: scale(0);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
 }
 
 .card {
@@ -306,7 +310,14 @@ input[type=submit]:active,
 .card-close-span {
   position: absolute;
   right: 0.5em;
-  font-size: 1.2em;
+  top: 0;
+  font-size: 2em;
+  color: gray;
+}
+
+.card-close-span:hover {
+  cursor: pointer;
+  color: #ff6b00;
 }
 
 .card-title {
