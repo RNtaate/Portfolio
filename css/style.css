@@ -150,7 +150,8 @@ main {
   border-top: 1px solid #999;
 }
 
-.project {
+.project,
+.card-img-div {
   height: 22em;
   margin: 10px 0;
   width: 100%;
@@ -179,7 +180,7 @@ main {
   background-image: url('../images/console2.jpg');
 }
 
-.project:last-child {
+.project:nth-child(5) {
   background-image: url('../images/screenshot1.png');
 }
 
@@ -213,8 +214,7 @@ main {
 }
 
 p,
-.langs,
-.resume-btn {
+.langs {
   font-size: 0.9em;
 }
 
@@ -233,7 +233,8 @@ p,
 }
 
 button:hover,
-input[type=submit]:hover {
+input[type=submit]:hover,
+.card-links-div > button:hover{
   cursor: pointer;
   color: #ff6b00;
   background-color: #FFF5E1;
@@ -241,7 +242,8 @@ input[type=submit]:hover {
 }
 
 button:active,
-input[type=submit]:active {
+input[type=submit]:active,
+.card-links-div > button:active {
   background-color: #e05304;
   color: white;
 }
@@ -277,6 +279,104 @@ input[type=submit]:active {
   top: 50%;
 }
 
+.card-wrapper-div {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.card {
+  background-color: white;
+  height: 80%;
+  width: 85%;
+  padding: 0.5em 0.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-close-span {
+  position: absolute;
+  right: 0.5em;
+  font-size: 1.2em;
+}
+
+.card-title {
+  padding-right: 1em;
+}
+
+.card-langs {
+  display: flex;
+}
+
+.card-langs > div {
+  margin-right: 1em;
+  font-size: 0.9em;
+  font-weight: 500;
+  border: 1px solid gray;
+  padding: 0.3em 0.5em;
+  border-radius: 2px;
+}
+
+.card-content-div {
+  height: 80%;
+}
+
+.card-img-div {
+  height: 45%;
+  margin: 0;
+}
+
+.card-desc-div {
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+
+.card-desc-div > p {
+  font-size: 0.8em;
+  line-height: 1.4em;
+  overflow: auto;
+  text-overflow: ellipsis;
+}
+
+.card-links-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-links-div > button {
+  background-color: #ff6b00;
+  border: 1px solid transparent;
+  color: white;
+  font-weight: bold;
+  width: 48%;
+  text-align: center;
+}
+
+.card-links-div > button > a {
+  display: block;
+  padding: 0.4em 0;
+}
+
+.card-links-div > button > a:hover {
+  color:  #ff6b00;
+}
+
+.card-links-div > button > a:active {
+  color: white;
+}
+
 .about-info-div {
   padding-bottom: 3em;
   border-bottom: 1px solid white;
@@ -292,7 +392,8 @@ input[type=submit]:active {
   left: 0;
   margin-top: 1em;
   border: 1px solid transparent;
-  transform: translateX(0)
+  transform: translateX(0);
+  font-size: 0.8em;
 }
 
 .about-info-div > p {
