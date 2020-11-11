@@ -29,7 +29,7 @@
     <span onclick="openMenu()"><i class="fas fa-bars"></i></span>
   </nav>
   <header class="bg-dark crete-round">
-    <h1 class="orange">Hey There. <br>I'm Roy Ntaate</h1>
+    <h1 class="orange" id="hey">Hey There. <br>I'm Roy Ntaate</h1>
     <h4>I am a Full Stack Developer</h4>
     <div class='header-social-media'>
       <a href='https://github.com/RNtaate'><i class="fab fa-github"></i></a>
@@ -51,7 +51,7 @@
             <div>bootstrap</div>
           </div>
         </div>
-        <button class="see-btn">See Project</button>
+        <button class="see-btn" id="1">See Project</button>
       </div>
 
       <div class='project'>
@@ -64,7 +64,7 @@
             <div>bootstrap</div>
           </div>
         </div>
-        <button class="see-btn">See Project</button>      
+        <button class="see-btn" id="2">See Project</button>      
       </div>
 
       <div class='project'>
@@ -77,7 +77,7 @@
             <div>bootstrap</div>
           </div>
         </div>
-        <button class="see-btn">See Project</button>      
+        <button class="see-btn" id="3">See Project</button>      
       </div>
 
       <div class='project'>
@@ -90,7 +90,7 @@
             <div>bootstrap</div>
           </div>
         </div>
-        <button class="see-btn">See Project</button>      
+        <button class="see-btn" id="4">See Project</button>      
       </div>
 
       <div class='project'>
@@ -103,16 +103,16 @@
             <div>bootstrap</div>
           </div>
         </div>
-        <button class="see-btn">See Project</button>      
+        <button class="see-btn" id="5">See Project</button>      
       </div>
     </section>
   </main>
 
   <section class="second-projects-section">
-    <div class="card-wrapper-div">
+    <div class="card-wrapper-div" id="card1">
       <div class='card inter-normal'>
-        <span class='card-close-span'>&times;</span>
-        <h3 class="card-title color-dark">Project for Mobiles</h3>
+        <span class='card-close-span' onclick = "closeModel()">&times;</span>
+        <h3 class="card-title color-dark">Project for Mobile</h3>
         <div class="card-langs">
           <div>html</div>
           <div>css</div>
@@ -133,6 +133,106 @@
         </div>
       </div> 
     </div>    
+
+    <div class="card-wrapper-div" id="card2">
+      <div class='card inter-normal'>
+        <span class='card-close-span' onclick = "closeModel()">&times;</span>
+        <h3 class="card-title color-dark">Project for Mobile</h3>
+        <div class="card-langs">
+          <div>html</div>
+          <div>css</div>
+          <div>bootstrap</div>
+        </div>
+
+        <div class="card-content-div">
+          <div class="card-img-div">
+
+          </div>
+          <div class="card-desc-div">
+            <p class="color-lighter-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta vel enim aliquam suscipit sit, magnam dolor doloribus iusto culpa quae esse, voluptas quo dignissimos. Maxime officiis est labore quisquam repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni perferendis architecto consequatur pariatur corporis neque eum illo minima delectus velit! Neque eveniet aliquid laboriosam ipsa qui voluptates numquam animi vel.</p>
+            <div class="card-links-div">
+              <button><a>See Live <i class="fas fa-external-link-alt"></i></a></button>
+              <button><a>See Source <i class="fab fa-github"></i></a></button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div> 
+
+    <div class="card-wrapper-div" id="card3">
+      <div class='card inter-normal'>
+        <span class='card-close-span' onclick = "closeModel()">&times;</span>
+        <h3 class="card-title color-dark">Project for Mobile</h3>
+        <div class="card-langs">
+          <div>html</div>
+          <div>css</div>
+          <div>bootstrap</div>
+        </div>
+
+        <div class="card-content-div">
+          <div class="card-img-div">
+
+          </div>
+          <div class="card-desc-div">
+            <p class="color-lighter-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta vel enim aliquam suscipit sit, magnam dolor doloribus iusto culpa quae esse, voluptas quo dignissimos. Maxime officiis est labore quisquam repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni perferendis architecto consequatur pariatur corporis neque eum illo minima delectus velit! Neque eveniet aliquid laboriosam ipsa qui voluptates numquam animi vel.</p>
+            <div class="card-links-div">
+              <button><a>See Live <i class="fas fa-external-link-alt"></i></a></button>
+              <button><a>See Source <i class="fab fa-github"></i></a></button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <div class="card-wrapper-div" id="card4">
+      <div class='card inter-normal'>
+        <span class='card-close-span' onclick = "closeModel()">&times;</span>
+        <h3 class="card-title color-dark">Project for Mobile</h3>
+        <div class="card-langs">
+          <div>html</div>
+          <div>css</div>
+          <div>bootstrap</div>
+        </div>
+
+        <div class="card-content-div">
+          <div class="card-img-div">
+
+          </div>
+          <div class="card-desc-div">
+            <p class="color-lighter-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta vel enim aliquam suscipit sit, magnam dolor doloribus iusto culpa quae esse, voluptas quo dignissimos. Maxime officiis est labore quisquam repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni perferendis architecto consequatur pariatur corporis neque eum illo minima delectus velit! Neque eveniet aliquid laboriosam ipsa qui voluptates numquam animi vel.</p>
+            <div class="card-links-div">
+              <button><a>See Live <i class="fas fa-external-link-alt"></i></a></button>
+              <button><a>See Source <i class="fab fa-github"></i></a></button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <div class="card-wrapper-div" id="card5">
+      <div class='card inter-normal'>
+        <span class='card-close-span' onclick = "closeModel()">&times;</span>
+        <h3 class="card-title color-dark">Project for Mobile</h3>
+        <div class="card-langs">
+          <div>html</div>
+          <div>css</div>
+          <div>bootstrap</div>
+        </div>
+
+        <div class="card-content-div">
+          <div class="card-img-div">
+
+          </div>
+          <div class="card-desc-div">
+            <p class="color-lighter-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta vel enim aliquam suscipit sit, magnam dolor doloribus iusto culpa quae esse, voluptas quo dignissimos. Maxime officiis est labore quisquam repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni perferendis architecto consequatur pariatur corporis neque eum illo minima delectus velit! Neque eveniet aliquid laboriosam ipsa qui voluptates numquam animi vel.</p>
+            <div class="card-links-div">
+              <button><a>See Live <i class="fas fa-external-link-alt"></i></a></button>
+              <button><a>See Source <i class="fab fa-github"></i></a></button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
   </section>
 
   <section class="about-section bg-dark" id='myAbout'>
