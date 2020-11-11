@@ -575,6 +575,37 @@ input[type=submit] {
     width: 48%;
     max-width: 48%;
   }
+
+  .message-div {
+    font-size: 1.4em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .form-div {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .contact-section-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+  .message-div {
+    flex: 1;
+    text-align: start;
+  }
+
+  .form-div {
+    flex: 1;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -585,5 +616,9 @@ input[type=submit] {
   .project {
     width: 31%;
     max-width: 31%;
+  }
+
+  .message-div {
+    font-size: 1.5em;
   }
 }
