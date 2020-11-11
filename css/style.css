@@ -232,6 +232,20 @@ p,
   transition: top 0.4s ease-in-out;
 }
 
+button:hover,
+input[type=submit]:hover {
+  cursor: pointer;
+  color: #ff6b00;
+  background-color: #FFF5E1;
+  border: 1px solid #ff6b00;
+}
+
+button:active,
+input[type=submit]:active {
+  background-color: #e05304;
+  color: white;
+}
+
 .langs {
   display: flex;
   margin-bottom: 5px;
@@ -272,11 +286,12 @@ p,
   font-size: 2.5em;
 }
 
-.about-info-div > .resume-btn {
+.resume-btn {
   position: relative;
   width: 50%;
   left: 0;
   margin-top: 1em;
+  border: 1px solid transparent;
   transform: translateX(0)
 }
 
@@ -382,7 +397,7 @@ textarea{
 }
 
 input[type=submit] {
-  border: none;
+  border: 1px solid transparent;
   font-weight: bold;
   padding: 0.9em 0;
 }
