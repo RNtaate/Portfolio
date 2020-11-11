@@ -13,7 +13,7 @@ function closeModel() {
     elements[i].style.opacity = '0';
     elements[i].style.transform = 'scale(0)';
 
-    elements[i].style.top = '-100%';
+    // elements[i].style.top = '-100%';
   }
 }
 
@@ -26,7 +26,7 @@ window.onload = function() {
 
       card.style.visibility = 'visible';
       card.style.opacity = '1';
-      card.style.top = '0';
+      // card.style.top = '0';
       card.style.transform = 'scale(1)';
       e.preventDefault();
     });
