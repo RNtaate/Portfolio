@@ -168,19 +168,23 @@ main {
   transition: box-shadow 0.4s ease-in-out;
 }
 
-.project:nth-child(1) {
+.project:nth-child(1),
+#card-img-1{
   background-image: url('../images/screenshot.png');
 }
 
-.project:nth-child(3) {
+.project:nth-child(3),
+#card-img-3 {
   background-image: url('../images/lit_grid3.jpg');
 }
 
-.project:nth-child(4) {
+.project:nth-child(4),
+#card-img-4 {
   background-image: url('../images/console2.jpg');
 }
 
-.project:nth-child(5) {
+.project:nth-child(5),
+#card-img-5 {
   background-image: url('../images/screenshot1.png');
 }
 
@@ -221,7 +225,7 @@ p,
 .see-btn {
   background-color: #ff6b00;
   color: white;
-  border: none;
+  border: 1px solid transparent;
   padding: 10px;
   font-weight: bold;
   width: 80%;
@@ -230,6 +234,7 @@ p,
   left: 50%;
   transform: translateX(-50%);
   transition: top 0.4s ease-in-out;
+  outline: none;
 }
 
 button:hover,
@@ -246,6 +251,7 @@ input[type=submit]:active,
 .card-links-div > button:active {
   background-color: #e05304;
   color: white;
+  border: 1px solid #ff6b00;
 }
 
 .langs {
@@ -283,7 +289,7 @@ input[type=submit]:active,
   height: 100%;
   width: 100%;
   position: fixed;
-  top: -100%;
+  top: 0;
   left: 0;
   transform: scale(0);
   background-color: rgba(0, 0, 0, 0.7);
@@ -344,6 +350,8 @@ input[type=submit]:active,
 .card-img-div {
   height: 45%;
   margin: 0;
+  border-radius: 0;
+  /* box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .card-desc-div {
@@ -373,6 +381,7 @@ input[type=submit]:active,
   font-weight: bold;
   width: 48%;
   text-align: center;
+  outline: none;
 }
 
 .card-links-div > button > a {
