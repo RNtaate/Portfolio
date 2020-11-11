@@ -64,6 +64,10 @@ a:hover {
   cursor: pointer;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .overlay-menu-div {
   background-color: rgba(50, 50, 50, 0.95);
   height: 100%;
@@ -154,7 +158,7 @@ main {
 
 .projects-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 1.5em 0;
   border-top: 1px solid #999;
@@ -561,5 +565,25 @@ input[type=submit] {
 
   .page-jump-div {
     display: flex;
+  }
+
+  .projects-section {
+    padding: 1.5em 1em;
+  }
+
+  .project {
+    width: 48%;
+    max-width: 48%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .projects-section {
+    padding: 1.5em 1em;
+  }
+
+  .project {
+    width: 31%;
+    max-width: 31%;
   }
 }
