@@ -139,6 +139,14 @@ header,
   margin-bottom: 2em;
 }
 
+header > h1 {
+  font-size: 2em;
+}
+
+header > h4 {
+  font-size: 1.2em;
+}
+
 .header-social-media {
   padding: 0.8em 0;
 }
@@ -567,6 +575,14 @@ input[type=submit] {
     display: flex;
   }
 
+  header > h1 {
+    font-size: 6vw;
+  }
+
+  header > h4 {
+    font-size: 3vw;
+  }
+
   .projects-section {
     padding: 1.5em 1em;
   }
@@ -625,6 +641,10 @@ input[type=submit] {
   
   .projects-section {
     padding: 1.5em 2em;
+  }
+
+  .projects-heading {
+    padding: 1em 2em;
   }
 
   .project {
