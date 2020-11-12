@@ -66,6 +66,7 @@ a:hover {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .overlay-menu-div {
@@ -340,7 +341,6 @@ input[type=submit]:active,
   background-color: white;
   height: 80%;
   width: 85%;
-  padding: 0.5em 0.5em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -348,19 +348,25 @@ input[type=submit]:active,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0.2em 0.2em;
 }
 
 .card-close-span {
   position: absolute;
-  right: 0.5em;
-  top: 0;
+  right: 0;
+  bottom: 100%;
   font-size: 2em;
-  color: gray;
+  color: #ccc;
+  z-index: 2;
 }
 
 .card-close-span:hover {
   cursor: pointer;
   color: #ff6b00;
+}
+
+.card-content-div {
+  height: 100%;
 }
 
 .card-title {
@@ -369,6 +375,7 @@ input[type=submit]:active,
 
 .card-langs {
   display: flex;
+  padding: 1em 0;
 }
 
 .card-langs > div {
@@ -380,15 +387,11 @@ input[type=submit]:active,
   border-radius: 2px;
 }
 
-.card-content-div {
-  height: 80%;
-}
-
 .card-img-div {
   height: 45%;
   margin: 0;
   border-radius: 0;
-  /* box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); */
+  border-bottom: 1px solid #ccc;
 }
 
 .card-desc-div {
@@ -399,10 +402,15 @@ input[type=submit]:active,
   padding-top: 1em;
 }
 
-.card-desc-div > p {
+.card-name-wrapper {
+  overflow: auto;
+  padding: 0 0.5em;
+  margin: 0.5em 0;
+}
+
+.card-name-wrapper > p {
   font-size: 0.8em;
   line-height: 1.4em;
-  overflow: auto;
   text-overflow: ellipsis;
 }
 
@@ -446,7 +454,8 @@ input[type=submit]:active,
   padding-bottom: 3em;
 }
 
-.about-info-div > h1 {
+.about-info-div > h1,
+.skills-section > h1 {
   font-size: 2.5em;
 }
 
@@ -466,6 +475,7 @@ input[type=submit]:active,
 
 .illustrator-div {
   width: 100%;
+  /* overflow: hidden; */
 }
 
 .illustrator-div > img {
@@ -604,6 +614,7 @@ input[type=submit] {
 
   .page-jump-div {
     display: flex;
+    width: 60%;
   }
 
   header > h1 {
@@ -659,6 +670,26 @@ input[type=submit] {
 }
 
 @media screen and (min-width: 768px) {
+
+  .page-jump-div {
+    width: 50%;
+  }
+
+  .card {
+    padding: 2em;
+  }
+
+  .card-img-div {
+    height: 55%;
+  }
+
+  .card-desc-div {
+    height: 45%;
+  }
+
+  .card-name-wrapper {
+    padding: 0 0;
+  }
 
   .contact-section-footer {
     display: flex;
@@ -739,5 +770,34 @@ input[type=submit] {
 
   .message-div {
     font-size: 1.5em;
+  }
+
+  .card {
+    padding: 2em;
+  }
+
+  .card-content-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card-img-div {
+    flex: 1;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .card-desc-div {
+    flex: 1;
+    height: 100%;
+    padding-top: 0;
+    padding-left: 2em;
+  }
+
+  .card-name-wrapper > p {
+    font-size: 0.9em;
+    line-height: 1.6em;
   }
 }
