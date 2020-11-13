@@ -34,7 +34,7 @@
 }
 
 .navbar-color {
-  color: #888;
+  color: #ccc;
 }
 
 .bg-lighter-dark {
@@ -115,7 +115,7 @@ html {
   justify-content: space-between;
   padding: 0.7em 1.3em;
   align-items: center;
-  color: #888;
+  color: #ccc;
   font-family: 'inter', sans-serif;
   position: sticky;
   top: 0;
@@ -330,7 +330,7 @@ input[type=submit]:active,
   top: -100%;
   left: 0;
   transform: scale(0);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 2;
   opacity: 0;
   visibility: hidden;
@@ -382,7 +382,8 @@ input[type=submit]:active,
   margin-right: 1em;
   font-size: 0.9em;
   font-weight: 500;
-  border: 1px solid gray;
+  color: #777;
+  border: 1px solid lightgray;
   padding: 0.3em 0.5em;
   border-radius: 2px;
 }
@@ -410,6 +411,7 @@ input[type=submit]:active,
 
 .card-name-wrapper > p {
   font-size: 0.8em;
+  font-weight: 500;
   line-height: 1.4em;
   text-overflow: ellipsis;
 }
@@ -452,6 +454,7 @@ input[type=submit]:active,
 
 .about-info-div {
   padding-bottom: 3em;
+  order: 2;
 }
 
 .about-info-div > h1,
@@ -471,11 +474,14 @@ input[type=submit]:active,
 
 .about-info-div > p {
   padding: 1em 0;
+  color: #F4F5F7;
+  line-height: 1.5em;
 }
 
 .illustrator-div {
   width: 100%;
-  /* overflow: hidden; */
+  order: 1;
+  margin-bottom: 2em;
 }
 
 .illustrator-div > img {
@@ -706,6 +712,15 @@ input[type=submit] {
   .about-info-div,
   .illustrator-div {
     width: 50%;
+  }
+
+  .about-info-div {
+    order: 1;
+  }
+
+  .illustrator-div {
+    order: 2;
+    margin-bottom: 0;
   }
 
   .skill-item {
