@@ -186,7 +186,7 @@ main {
   width: 100%;
   border-radius: 2px;
   max-width: 100%;
-  background-image: url('../images/screenshot_electronics.jpg');
+  /* background-image: url('../images/screenshot_electronics.jpg'); */
   background-position: center;
   background-size: cover;
   background-clip: border-box;
