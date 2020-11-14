@@ -198,13 +198,13 @@ main {
 }
 
 .project:nth-child(1),
-#card-img-1{
+#card-img-1 {
   background-image: url('../images/screenshot.png');
 }
 
 .project:nth-child(2),
-#card-img-2{
-  background-image: url('../images/screenshot_electronics.jpg');
+#card-img-2 {
+  background-image: url('../images/screenshot.png');
 }
 
 .project:nth-child(3),
