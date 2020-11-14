@@ -186,6 +186,7 @@ main {
   width: 100%;
   border-radius: 2px;
   max-width: 100%;
+  background-image: url('../images/screenshot_electronics.jpg');
   background-position: center;
   background-size: cover;
   background-clip: border-box;
@@ -203,7 +204,7 @@ main {
 
 .project:nth-child(2),
 #card-img-2{
-  background-image: url('../images/screenshot.png');
+  background-image: url('../images/screenshot_electronics.jpg');
 }
 
 .project:nth-child(3),
