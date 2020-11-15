@@ -122,15 +122,54 @@ html {
   z-index: 1;
 }
 
+.navbar > span {
+  border: 1px solid gray;
+  padding: 0.2em 0.5em;
+  border-radius: 0.2em;
+}
+
 .navbar > span:hover {
   cursor: pointer;
   color: white;
+}
+
+.logo-div {
+  width: 4em;
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+.logo-div > img {
+  width: 100%;
 }
 
 .page-jump-div {
   justify-content: space-between;
   display: none;
   width: 50%;
+}
+
+.page-jump-div > a {
+  padding: 0.5em 0.5em;
+  border-radius: 0.3em;
+  background: linear-gradient(#ff6b00, #e05304);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.page-jump-div > a > h3 {
+  font-family: 'inter', sans-serif;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+
+.page-jump-div > a:hover {
+  background: white;
+}
+
+.page-jump-div > a:hover > h3 {
+  color: #ff6b00;
 }
 
 header,
@@ -186,7 +225,6 @@ main {
   width: 100%;
   border-radius: 2px;
   max-width: 100%;
-  /* background-image: url('../images/screenshot_electronics.jpg'); */
   background-position: center;
   background-size: cover;
   background-clip: border-box;
@@ -628,7 +666,7 @@ input[type=submit] {
 
   .page-jump-div {
     display: flex;
-    width: 60%;
+    width: 63%;
   }
 
   header > h1 {
