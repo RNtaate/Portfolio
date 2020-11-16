@@ -113,7 +113,6 @@ html {
 .navbar {
   display: flex;
   justify-content: space-between;
-  /* background: linear-gradient(#444 0.3%, #222 50.8%); */
   padding: 0.7em 1.3em;
   align-items: center;
   color: #ccc;
@@ -158,6 +157,7 @@ html {
   font-size: 0.9em;
   transition: all 0.3s ease-in-out;
   border-right: 1px solid #777;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
 }
 
 .page-jump-div > a:first-child {
@@ -181,6 +181,9 @@ html {
 }
 
 header {
+  background-image:
+  linear-gradient(to right, #1C1A19, #1c1a19),
+  url('../images/roy4.jpg');
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
