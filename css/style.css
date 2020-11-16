@@ -180,6 +180,13 @@ html {
   color: #ff6b00;
 }
 
+header {
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+
 header,
 .about-section {
   color: white;
@@ -669,6 +676,13 @@ input[type=submit] {
 @media screen and (min-width: 576px) {
   .navbar > span {
     display: none;
+  }
+
+  header {
+    background-image:
+    linear-gradient(to right, #1C1A19 50%, transparent),
+    linear-gradient(to right, #1C1A19 55%, transparent),
+    url('../images/roy4.jpg');
   }
 
   .page-jump-div {
