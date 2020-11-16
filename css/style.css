@@ -113,6 +113,7 @@ html {
 .navbar {
   display: flex;
   justify-content: space-between;
+  /* background: linear-gradient(#444 0.3%, #222 50.8%); */
   padding: 0.7em 1.3em;
   align-items: center;
   color: #ccc;
@@ -145,27 +146,34 @@ html {
 }
 
 .page-jump-div {
-  justify-content: space-between;
+  justify-content: flex-end;
   display: none;
   width: 50%;
 }
 
 .page-jump-div > a {
-  padding: 0.5em 0.5em;
-  border-radius: 0.3em;
-  background: linear-gradient(#ff6b00, #e05304);
+  padding: 0.5em 1em;
+  background: linear-gradient(#777 0.3%, #333 50.8%);
   color: white;
+  font-size: 0.9em;
   transition: all 0.3s ease-in-out;
+  border-right: 1px solid #777;
+}
+
+.page-jump-div > a:first-child {
+  border-radius: 0.3em 0 0 0.3em;
+  border-left: 1px solid #777;
+}
+
+.page-jump-div > a:last-child {
+  border-radius: 0 0.3em 0.3em 0;
+  border-right: 1px solid #777;
 }
 
 .page-jump-div > a > h3 {
   font-family: 'inter', sans-serif;
   font-weight: 400;
   transition: all 0.3s ease-in-out;
-}
-
-.page-jump-div > a:hover {
-  background: white;
 }
 
 .page-jump-div > a:hover > h3 {
@@ -455,7 +463,6 @@ input[type=submit]:active,
 
 .card-name-wrapper > p {
   font-size: 0.8em;
-  /* font-family: 'inter', sans-serif; */
   font-weight: 500;
   line-height: 1.4em;
   color: rgb(110, 110, 110);
@@ -727,6 +734,10 @@ input[type=submit] {
     width: 50%;
   }
 
+  .page-jump-div > a {
+    padding: 0.5em 1.5em;
+  }
+
   .card {
     padding: 2em;
   }
@@ -796,6 +807,10 @@ input[type=submit] {
 
   .navbar {
     padding: 1em 4em;
+  }
+
+  .page-jump-div > a {
+    padding: 0.5em 2em;
   }
 
   #name-hidden {
