@@ -69,6 +69,10 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .overlay-menu-div {
   background-color: rgba(50, 50, 50, 0.95);
   height: 100%;
