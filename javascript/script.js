@@ -32,3 +32,14 @@ window.onload = function() {
     });
   }
 }
+
+function jumpToSection(place = '') {
+  let sec;
+  if (place == '') {
+    sec = document.querySelector('html');
+  }
+  else {
+    sec = document.getElementById(place);
+  }
+  sec.scrollIntoView();
+}
