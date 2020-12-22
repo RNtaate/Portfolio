@@ -29,23 +29,23 @@
   <div id='mobile-menu' class="overlay-menu-div">
     <span class="close-span" onclick="closeMenu()">&times;</span>
     <div class="overlay-inner-menu">
-      <a href="#" onclick="closeMenu()"><h3>Introduction</h3></a>
-      <a href="#myProjects" onclick="closeMenu()"><h3>Projects</h3></a>
-      <a href='#myAbout' onclick="closeMenu()"><h3>About</h3></a>
-      <a href='#skills' onclick="closeMenu()"><h3>Skills</h3></a>
-      <a href='#myContact' onclick="closeMenu()"><h3>Contacts</h3></a>
+      <a onclick="jumpToSection(); closeMenu()"><h3>Introduction</h3></a>
+      <a onclick="jumpToSection('myProjects'); closeMenu()"><h3>Projects</h3></a>
+      <a onclick="jumpToSection('myAbout'); closeMenu()"><h3>About</h3></a>
+      <a onclick="jumpToSection('skills'); closeMenu()"><h3>Skills</h3></a>
+      <a onclick="jumpToSection('myContact'); closeMenu()"><h3>Contacts</h3></a>
     </div>
   </div>
 
   <nav class='navbar bg-lighter-dark'>
-    <a href="#" class='navbar-color'><div class="logo-div"><img src="./images/pt1.png"></div></a>
+    <a onclick="jumpToSection()" class='navbar-color'><div class="logo-div"><img src="./images/pt1.png"></div></a>
     <span onclick="openMenu()"><i class="fa fa-bars"></i></span>
 
     <div class="page-jump-div">
-      <a href="#myProjects" class="navbar-color"><h3>Projects</h3></a>
-      <a href='#myAbout' class="navbar-color"><h3>About</h3></a>
-      <a href='#skills' class="navbar-color"><h3>Skills</h3></a>
-      <a href='#myContact' class="navbar-color"><h3>Contacts</h3></a>
+      <a onclick="jumpToSection('myProjects')" class="navbar-color"><h3>Projects</h3></a>
+      <a onclick="jumpToSection('myAbout')" class="navbar-color"><h3>About</h3></a>
+      <a onclick="jumpToSection('skills')" class="navbar-color"><h3>Skills</h3></a>
+      <a onclick="jumpToSection('myContact')" class="navbar-color"><h3>Contacts</h3></a>
     </div>
   </nav>
   <header class="bg-dark crete-round">
