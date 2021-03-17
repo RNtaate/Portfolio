@@ -285,6 +285,11 @@ main {
   background-image: url('../images/screenshot1.png');
 }
 
+.project:nth-child(6),
+#card-img-6 {
+  background-image: url('../images/endless-runner.png');
+}
+
 .desc {
   color: white;
   display: flex;
