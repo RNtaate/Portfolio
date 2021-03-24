@@ -125,12 +125,13 @@ body {
   top: 0;
   height: 3.5em;
   width: 100%;
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
 .navbar > span {
   border: 1px solid gray;
-  padding: 0.2em 0.5em;
+  padding: 0 0.5em;
   border-radius: 0.2em;
 }
 
