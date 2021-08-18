@@ -257,13 +257,14 @@ main {
   position: relative;
   overflow: hidden;
   background-repeat: no-repeat;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
   transition: box-shadow 0.4s ease-in-out;
 }
 
 .project:nth-child(1),
 #card-img-1 {
-  background-image: url('../images/screenshot.png');
+  background-image: url('../images/home_screen_2.jpg');
+  background-size: contain;
 }
 
 .project:nth-child(2),
@@ -284,6 +285,10 @@ main {
 .project:nth-child(5),
 #card-img-5 {
   background-image: url('../images/screenshot1.png');
+}
+
+#card-img-5 {
+  border-bottom: 1px solid #ccc;
 }
 
 .project:nth-child(6),
@@ -467,7 +472,6 @@ input[type=submit]:active,
   height: 45%;
   margin: 0;
   border-radius: 0;
-  border-bottom: 1px solid #ccc;
 }
 
 .card-desc-div {
@@ -899,8 +903,11 @@ input[type=submit] {
   .card-img-div {
     flex: 1;
     height: 100%;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    background-color: #ffe;
+  }
+
+  #card-img-5 {
+    border-right: 1px solid #ccc;
   }
 
   .card-desc-div {
