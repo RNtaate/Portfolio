@@ -205,11 +205,21 @@ header,
   margin-bottom: 2em;
 }
 
-header > h1 {
+.header-heading-inner-div {
+  display: flex;
+}
+
+.header-heading-div > h2,
+.header-heading-inner-div > h2,
+.header-heading-inner-div > h1 {
   font-size: 2em;
 }
 
-#name-hidden {
+.header-heading-inner-div > h2 {
+  margin-right: 2%;
+}
+
+.name-hidden {
   text-shadow: 0px 4px 1px rgba(150, 0, 0), 0 10px 50px rgba(255, 0, 0);
   transition: text-shadow 0.5s ease-in-out;
 }
@@ -710,11 +720,13 @@ input[type=submit] {
     width: 63%;
   }
 
-  header > h1 {
+  .header-heading-div > h2,
+  .header-heading-inner-div > h2,
+  .header-heading-inner-div > h1 {
     font-size: 6vw;
   }
 
-  #name-hidden {
+  .name-hidden {
     text-shadow: 5px 5px rgba(255, 0, 0, 0.4),
     8px 8px rgba(255, 0, 0, 0.3),
     11px 11px rgba(255, 0, 0, 0.2),
@@ -853,14 +865,6 @@ input[type=submit] {
 
   .page-jump-div > a {
     padding: 0.5em 2em;
-  }
-
-  #name-hidden {
-    text-shadow: 5px 5px rgba(255, 0, 0, 0.4),
-    10px 10px rgba(255, 0, 0, 0.3),
-    15px 15px rgba(255, 0, 0, 0.2),
-    20px 20px rgba(255, 0, 0, 0.1),
-    25px 25px rgba(255, 0, 0, 0.05);
   }
 
   .projects-section {
