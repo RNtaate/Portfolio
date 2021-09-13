@@ -577,6 +577,14 @@ input[type=submit]:active,
 .about-info-div {
   padding-bottom: 3em;
   order: 2;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1.5s ease
+}
+
+.about-info-div.active {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .about-info-div > h1,
