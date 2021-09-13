@@ -20,7 +20,15 @@ function closeModel() {
 let reveal = () => {
   let header = document.querySelector("header");
   let myBottom = header.getBoundingClientRect().bottom;
-  let headerHeight = header.getBoundingClientRect().height; 
+  let headerHeight = header.getBoundingClientRect().height;
+  let windowHeight = window.innerHeight;
+  
+  let about = document.querySelector('.about-section');
+  let aboutDiv = document.querySelector('.about-info-div');
+  let aboutTop = about.getBoundingClientRect().top;
+  let aboutBottom = about.getBoundingClientRect().bottom;
+  console.log(windowHeight);
+  console.log('Now the top is', aboutTop);
 
   let revealElement = document.querySelector(".header-heading-inner-div");
   let greetingHeading = document.querySelector(".hey-there");
@@ -38,6 +46,13 @@ let reveal = () => {
     greetingHeading.classList.remove('active');
     stackHeading.classList.remove('active');
     socialDiv.classList.remove('active');
+  }
+
+  if ((aboutTop < (windowHeight - 150)) && (aboutBottom > (windowHeight - 150))) {
+    aboutDiv.classList.add('active');
+  }
+  else {
+    aboutDiv.classList.remove('active');
   }
 }
 
