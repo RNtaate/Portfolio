@@ -206,8 +206,26 @@ header,
   margin-bottom: 2em;
 }
 
+.header-heading-inner-div,
+.hey-there {
+  opacity: 0;
+}
+
 .header-heading-inner-div {
   display: flex;
+  transform: translateX(-100%);
+  transition: all 2s ease;
+}
+
+.hey-there {
+  transform: translateX(-50%);
+  transition: all 1s ease;
+}
+
+.header-heading-inner-div.active,
+.hey-there.active {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .header-heading-div > h2,
@@ -228,6 +246,19 @@ header,
 header > h4 {
   font-size: 1.2em;
   transition: text-shadow 0.5s ease-in-out;
+}
+
+.stack-heading,
+.header-social-media {
+  transform: translateY(-200%);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.stack-heading.active,
+.header-social-media.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .header-social-media {
