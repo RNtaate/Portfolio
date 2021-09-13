@@ -24,7 +24,9 @@ let reveal = () => {
   let windowHeight = window.innerHeight;
   
   let about = document.querySelector('.about-section');
-  let aboutDiv = document.querySelector('.about-info-div');
+  let aboutHeading = document.querySelector('.about-h1');
+  let aboutPar = document.querySelector('.about-p');
+  let aboutResume = document.querySelector('.resume-btn');
   let aboutTop = about.getBoundingClientRect().top;
   let aboutBottom = about.getBoundingClientRect().bottom;
   console.log(windowHeight);
@@ -49,10 +51,14 @@ let reveal = () => {
   }
 
   if ((aboutTop < (windowHeight - 150)) && (aboutBottom > (windowHeight - 150))) {
-    aboutDiv.classList.add('active');
+    aboutHeading.classList.add('active');
+    aboutPar.classList.add('active');
+    aboutResume.classList.add('active');
   }
   else {
-    aboutDiv.classList.remove('active');
+    aboutHeading.classList.remove('active');
+    aboutPar.classList.remove('active');
+    aboutResume.classList.remove('active');
   }
 }
 
