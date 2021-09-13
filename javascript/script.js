@@ -17,6 +17,30 @@ function closeModel() {
   }
 }
 
+let reveal = () => {
+  let header = document.querySelector("header");
+  let myBottom = header.getBoundingClientRect().bottom;
+  let headerHeight = header.getBoundingClientRect().height; 
+
+  let revealElement = document.querySelector(".header-heading-inner-div");
+  let greetingHeading = document.querySelector(".hey-there");
+  let stackHeading = document.querySelector('.stack-heading');
+  let socialDiv = document.querySelector(".header-social-media");
+
+  if(myBottom > headerHeight) {
+    revealElement.classList.add('active');
+    greetingHeading.classList.add('active');
+    stackHeading.classList.add('active');
+    socialDiv.classList.add('active');
+  }
+  else {
+    revealElement.classList.remove('active');
+    greetingHeading.classList.remove('active');
+    stackHeading.classList.remove('active');
+    socialDiv.classList.remove('active');
+  }
+}
+
 window.onload = function() {
   list = document.getElementsByClassName('see-btn');
   for(var i = 0; i < list.length; i ++){
@@ -31,6 +55,8 @@ window.onload = function() {
       e.preventDefault();
     });
   }
+
+  reveal();
 }
 
 function jumpToSection(place = '') {
@@ -43,3 +69,5 @@ function jumpToSection(place = '') {
   }
   sec.scrollIntoView();
 }
+
+window.addEventListener('scroll', reveal);
