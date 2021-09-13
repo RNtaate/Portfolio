@@ -207,23 +207,32 @@ header,
 }
 
 .header-heading-inner-div,
-.hey-there {
+.hey-there,
+.about-h1,
+.about-p {
   opacity: 0;
 }
 
-.header-heading-inner-div {
-  display: flex;
+.header-heading-inner-div,
+.about-p {
   transform: translateX(-100%);
   transition: all 2s ease;
 }
 
-.hey-there {
+.header-heading-inner-div {
+  display: flex;
+}
+
+.hey-there,
+.about-h1 {
   transform: translateX(-50%);
   transition: all 1s ease;
 }
 
 .header-heading-inner-div.active,
-.hey-there.active {
+.hey-there.active,
+.about-h1.active,
+.about-p.active {
   transform: translateX(0);
   opacity: 1;
 }
@@ -577,14 +586,6 @@ input[type=submit]:active,
 .about-info-div {
   padding-bottom: 3em;
   order: 2;
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: all 1.5s ease
-}
-
-.about-info-div.active {
-  transform: translateX(0);
-  opacity: 1;
 }
 
 .about-info-div > h1,
@@ -598,8 +599,15 @@ input[type=submit]:active,
   left: 0;
   margin-top: 1em;
   border: 1px solid transparent;
-  transform: translateX(0);
+  transform: translateX(50%);
+  opacity: 0;
+  transition: all 2s ease;
   font-size: 0.8em;
+}
+
+.resume-btn.active {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .about-info-div > p {
