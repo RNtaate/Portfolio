@@ -320,17 +320,17 @@ main {
 
 .project:nth-child(2),
 #card-img-2 {
-  background-image: url('../images/sound.png');
+  background-image: url('../images/lit_grid3.jpg');
 }
 
 .project:nth-child(3),
 #card-img-3 {
-  background-image: url('../images/lit_grid3.jpg');
+  background-image: url('../images/norp_chart2.gif');
 }
 
 .project:nth-child(4),
 #card-img-4 {
-  background-image: url('../images/console2.jpg');
+  background-image: url('../images/endless-runner.png');
 }
 
 .project:nth-child(5),
@@ -344,8 +344,29 @@ main {
 
 .project:nth-child(6),
 #card-img-6 {
-  background-image: url('../images/endless-runner.png');
+  background-image: url('../images/screenshot3.png');
 }
+
+.project:nth-child(7),
+#card-img-7 {
+  background-image: url('../images/node_posts.png');
+}
+
+.project:nth-child(8),
+#card-img-8 {
+  background-image: url('../images/norp_movies.png');
+}
+
+.project:nth-child(9),
+#card-img-9 {
+  background-image: url('../images/console2.jpg');
+}
+
+.project:nth-child(10),
+#card-img-10 {
+  background-image: url('../images/sound.png');
+}
+
 
 .desc {
   color: white;
@@ -424,13 +445,15 @@ input[type=submit]:active,
 
 .langs {
   display: flex;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
   font-family: 'inter', sans-serif;
 }
 
 .langs > div {
   padding: 8px;
   margin-right: 10px;
+  margin-bottom: 10px;
   border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -505,11 +528,13 @@ input[type=submit]:active,
 
 .card-langs {
   display: flex;
-  padding: 1em 0;
+  padding: 0.5em 0;
+  flex-wrap: wrap;
 }
 
 .card-langs > div {
   margin-right: 1em;
+  margin-bottom: 1em;
   font-size: 0.9em;
   font-weight: 500;
   color: #ff6b00;
