@@ -289,9 +289,7 @@ main {
 
 .projects-section {
   display: flex;
-  justify-content: space-evenly;
-  gap: 20px;
-  row-gap: 40px;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 1.5em 0;
   border-top: 1px solid #999;
@@ -301,6 +299,7 @@ main {
 .card-img-div {
   height: 22em;
   width: 100%;
+  margin: 20px 0;
   border-radius: 2px;
   max-width: 100%;
   background-position: center;
@@ -944,10 +943,16 @@ input[type=submit] {
 
   .projects-section {
     padding: 1.5em 2em;
+    justify-content: space-evenly;
   }
 
   .projects-heading {
     padding: 1em 2em;
+  }
+
+  .project,
+  .card-img-div {
+    margin: 20px 10px;
   }
 
   .project {
