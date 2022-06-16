@@ -71,6 +71,10 @@ html {
 
 body {
   overflow-x: hidden;
+  background-image: url("../images/white_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .overlay-menu-div {
@@ -738,9 +742,14 @@ textarea {
   width: 100%;
   padding: 0.5em 1em;
   margin-bottom: 1em;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #999;
   font-size: 0.8em;
   outline: none;
+}
+
+input[type=text],
+input[type=email] {
+  background-color: transparent;
 }
 
 textarea{
