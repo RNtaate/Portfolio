@@ -352,21 +352,16 @@ main {
 }
 
 .project:nth-child(7),
-#card-img-7 {
-  background-image: url('../images/node_posts.png');
-}
-
-.project:nth-child(8),
 #card-img-8 {
   background-image: url('../images/norp_movies.png');
 }
 
-.project:nth-child(9),
+.project:nth-child(8),
 #card-img-9 {
   background-image: url('../images/console2.jpg');
 }
 
-.project:nth-child(10),
+.project:nth-child(9),
 #card-img-10 {
   background-image: url('../images/sound.png');
 }
