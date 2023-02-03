@@ -219,7 +219,7 @@ header,
 
 .header-heading-inner-div,
 .about-p {
-  transform: translateX(-100%);
+  transform: translateX(-80%);
   transition: all 2s ease;
 }
 
