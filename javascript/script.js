@@ -17,50 +17,29 @@ function closeModel() {
   }
 }
 
-let reveal = () => {
-  let header = document.querySelector("header");
-  let myBottom = header.getBoundingClientRect().bottom;
-  let headerHeight = header.getBoundingClientRect().height;
-  let windowHeight = window.innerHeight;
-  
-  let about = document.querySelector('.about-section');
-  let aboutHeading = document.querySelector('.about-h1');
-  let aboutPar = document.querySelector('.about-p');
-  let aboutResume = document.querySelector('.resume-btn');
-  let aboutTop = about.getBoundingClientRect().top;
-  let aboutBottom = about.getBoundingClientRect().bottom;
-  console.log(windowHeight);
-  console.log('Now the top is', aboutTop);
 
   let revealElement = document.querySelector(".header-heading-inner-div");
   let greetingHeading = document.querySelector(".hey-there");
   let stackHeading = document.querySelector('.stack-heading');
   let socialDiv = document.querySelector(".header-social-media");
+  let aboutHeading = document.querySelector('.about-h1');
+  let aboutPar = document.querySelector('.about-p');
+  let aboutResume = document.querySelector('.resume-btn');
 
-  if(myBottom > headerHeight) {
-    revealElement.classList.add('active');
-    greetingHeading.classList.add('active');
-    stackHeading.classList.add('active');
-    socialDiv.classList.add('active');
-  }
-  else {
-    revealElement.classList.remove('active');
-    greetingHeading.classList.remove('active');
-    stackHeading.classList.remove('active');
-    socialDiv.classList.remove('active');
-  }
+  let observedArray = [revealElement, greetingHeading, stackHeading, socialDiv, aboutHeading, aboutPar, aboutResume]
 
-  if ((aboutTop < (windowHeight - 150)) && (aboutBottom > (windowHeight - 150))) {
-    aboutHeading.classList.add('active');
-    aboutPar.classList.add('active');
-    aboutResume.classList.add('active');
-  }
-  else {
-    aboutHeading.classList.remove('active');
-    aboutPar.classList.remove('active');
-    aboutResume.classList.remove('active');
-  }
-}
+  let observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("active", entry.isIntersecting);
+    })
+  }, {
+    threshold: 0,
+  })
+
+  observedArray.forEach( element => {
+    observer.observe(element);
+  })
+
 
 window.onload = function() {
   list = document.getElementsByClassName('see-btn');
@@ -77,7 +56,6 @@ window.onload = function() {
     });
   }
 
-  reveal();
 }
 
 function jumpToSection(place = '') {
@@ -90,5 +68,3 @@ function jumpToSection(place = '') {
   }
   sec.scrollIntoView();
 }
-
-window.addEventListener('scroll', reveal);
